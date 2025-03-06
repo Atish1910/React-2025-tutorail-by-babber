@@ -1,0 +1,115 @@
+
+:root {
+  --fcolor: #A2D2DF;
+  --scolor: #F6EFBD;
+  --tcolor: #E4C087;
+  --ftcolor: #BC7C7C;
+}
+
+
+body {
+  font-size: 14px;
+  color: var(--ftcolor);
+  background-color: var(--fcolor);
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+h1, h2, h3{
+  /* background-color: white; */
+  color: var(--ftcolor) !important;
+}
+h4, h5, h6{
+  color: var(--scolor) !important;
+}
+
+.text-fcolor {
+  color: var(--fcolor);
+}
+
+.bg-fcolor {
+  background-color: var(--fcolor);
+}
+
+
+.text-scolor {
+  color: var(--scolor);
+}
+
+.bg-scolor {
+  background-color: var(--scolor);
+}
+
+
+.text-tcolor {
+  color: var(--tcolor);
+}
+
+.bg-tcolor {
+  background-color: var(--tcolor);
+}
+
+
+.text-ftcolor {
+  color: var(--ftcolor);
+}
+
+.bg-ftcolor {
+  background-color: var(--ftcolor);
+}
+
+.btn-danger{
+  color: var(--ftcolor) !important;
+  background-color: var(--scolor) !important;
+  border-color: var(--fcolor) !important;
+
+}
+
+/* ================================ */
+*{
+    background-color: #A2D2DF;
+}
+
+.container{
+  padding: 1rem 0rem;
+  margin: 1rem 0rem;
+  border-top: 1px solid var(--ftcolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    font-size: 8vmin;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    background-color: white;
+    color: #8f8d8d;
+
+}
+.box:disabled{
+    background-color: transparent;
+}
