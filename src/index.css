@@ -87,8 +87,8 @@ h4, h5, h6{
   padding: 1rem 0rem;
   margin: 1rem 0rem;
   border-top: 1px solid var(--ftcolor);
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 }

@@ -7,6 +7,8 @@ import Card from "./components/PropsCard";
 import Button from "./components/PropsButton";
 import { useState } from "react";
 import DataTravel from "./components/DataPassFromChildToParent";
+import EventHandelling from "./components/EventHandelling";
+import Hooks from "./components/Hooks";
 
 function App(){
   const [Count, setCount] = useState(0);
@@ -50,6 +52,8 @@ function App(){
       <DataTravel headName={headName} setHeadName={setHeadName}>
         <p>i am inside App/Parent Component value of name is : {headName}</p>
       </DataTravel>
+      <EventHandelling></EventHandelling>
+      <Hooks></Hooks>
     </>
   )
 }
