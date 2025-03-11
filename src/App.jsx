@@ -9,6 +9,15 @@ import { useState } from "react";
 import DataTravel from "./components/DataPassFromChildToParent";
 import EventHandelling from "./components/EventHandelling";
 import Hooks from "./components/Hooks";
+import LoggerComponent from "./components/useEffect/OneLoggerComp";
+import LoggerCompo from "./components/useEffect/OneLoggerComp";
+import TimerComp from "./components/useEffect/TwoTimerComp";
+import DataFetcher from "./components/useEffect/ThreeDataFetcher";
+import ResizeComp from "./components/useEffect/FourResizeComp";
+import MultiFunctionComp from "./components/useEffect/FiveMultiFunctionComponent.JSX";
+import ChildA from "./components/Context/child/ChildA";
+import UseContext from "./components/Context/UseContext";
+import Xcontext from "./components/Xcontext/Xcontext";
 
 function App(){
   const [Count, setCount] = useState(0);
@@ -53,7 +62,29 @@ function App(){
         <p>i am inside App/Parent Component value of name is : {headName}</p>
       </DataTravel>
       <EventHandelling></EventHandelling>
-      <Hooks></Hooks>
+      {/* <Hooks></Hooks> */}
+      <div className="container">
+        <div className="row">
+          <h1>Hooks in Detail</h1>
+          <div className="col-lg-4 py-5 border">
+            <LoggerCompo></LoggerCompo>
+          </div>
+          <div className="col-lg-4 py-5 border">
+            <TimerComp></TimerComp>
+          </div>
+          <div className="col-lg-4 py-5 border">
+            <DataFetcher></DataFetcher>
+          </div>
+          <div className="col-lg-4 py-5 border">
+            <ResizeComp></ResizeComp>
+          </div>
+          <div className="col-lg-4 py-5 border">
+            <MultiFunctionComp></MultiFunctionComp>
+          </div>
+        </div>
+      </div>
+      <UseContext></UseContext>
+      <Xcontext></Xcontext>
     </>
   )
 }
