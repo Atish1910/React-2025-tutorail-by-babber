@@ -11,7 +11,7 @@ function Xcontext(){
     <>
     <div className="container">
       <div className="row">
-        <h1> i am Parent Xcontext </h1>
+        <h6> i am Parent Xcontext </h6>
         {/* <A></A> */}
         <XuserContext.Provider value={Xuser}>
           <K></K>

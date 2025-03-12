@@ -6,10 +6,10 @@ function K(){
   return(
     <>
       <h6>hi i am learning use Context Hooks</h6>
-      <p>{Xuser.designation}</p>
+      <p>Props Drilling granbdparents can share data in grand child without </p>
+      <p>Designation : {Xuser.designation}</p>
     </>
   )
 }
-
 
 export default K;

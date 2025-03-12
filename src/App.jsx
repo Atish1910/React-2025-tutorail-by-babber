@@ -18,6 +18,75 @@ import MultiFunctionComp from "./components/useEffect/FiveMultiFunctionComponent
 import ChildA from "./components/Context/child/ChildA";
 import UseContext from "./components/Context/UseContext";
 import Xcontext from "./components/Xcontext/Xcontext";
+import B from "./components/Xcontext/Xchild/B";
+import Theme from "./components/Xcontext/Theme";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Router/Home";
+import About from "./components/Router/About";
+import Dashboard from "./components/Router/Dashboard";
+import Navbar from "./components/Router/Navbar";
+import ParamComp from "./components/Router/ParamComp";
+import Courses from "./components/Router/NestedRouting/Courses";
+import Mock from "./components/Router/NestedRouting/Mock";
+import Reports from "./components/Router/NestedRouting/Reports";
+
+
+  ////////////////////Routing in react STart
+const router = createBrowserRouter(
+  [
+    {
+      path:"/",
+      element: <div className="text-center">
+        <Navbar></Navbar>
+        <Home></Home>
+      </div>
+    },
+    {
+      path:"/about",
+      element: <div className="text-center">
+      <Navbar></Navbar>
+      <About></About>
+    </div>
+    },
+    {
+      path:"/dashboard",
+      element: <div className="text-center">
+        <Navbar></Navbar>
+        <Dashboard></Dashboard>
+      </div>,
+      children:[
+        {
+          path:"courses",
+          element: <div className="">
+            <Courses></Courses>
+          </div>
+        },
+        {
+          path:"mock-tests",
+          element: <div className="">
+            <Mock></Mock>
+          </div>
+        },
+        {
+          path:"reports",
+          element: <div className="">
+            <Reports></Reports>
+          </div>
+        }
+      ]
+    },
+    {
+      path:"student/:id",
+      element:
+      <div className="text-center">
+        <Navbar></Navbar>
+        <ParamComp></ParamComp>
+      </div>
+    }
+  ]
+);
+////////////////////Routing in react End
+
 
 function App(){
   const [Count, setCount] = useState(0);
@@ -29,10 +98,18 @@ function App(){
   ////////////////////////
   const [headName, setHeadName] = useState("");
 
+
+  ////////////////////Routing in react STart
+
+
+  
+  ////////////////////Routing in react End
+
     
   return(
     
     <>
+
       <div className="container text-center">
         <div className="row">
           <h1>GlaDowl</h1>
@@ -62,7 +139,6 @@ function App(){
         <p>i am inside App/Parent Component value of name is : {headName}</p>
       </DataTravel>
       <EventHandelling></EventHandelling>
-      {/* <Hooks></Hooks> */}
       <div className="container">
         <div className="row">
           <h1>Hooks in Detail</h1>
@@ -83,8 +159,25 @@ function App(){
           </div>
         </div>
       </div>
-      <UseContext></UseContext>
-      <Xcontext></Xcontext>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 border py-5">
+              <UseContext></UseContext>
+          </div>
+          <div className="col-lg-4 border py-5">
+              <Xcontext></Xcontext>
+          </div>
+          <div className="col-lg-4 border py-5">
+            <Theme></Theme>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row text-center">
+          <h1>React Routing</h1>
+          <RouterProvider router={router}></RouterProvider>
+        </div>
+      </div>
     </>
   )
 }

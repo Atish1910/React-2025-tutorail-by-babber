@@ -33,7 +33,7 @@ h1, h2, h3{
   color: var(--ftcolor) !important;
 }
 h4, h5, h6{
-  color: var(--scolor) !important;
+  color: black !important;
 }
 
 .text-fcolor {
@@ -112,4 +112,21 @@ h4, h5, h6{
 }
 .box:disabled{
     background-color: transparent;
+}
+.bg-theme{
+  height: 200px;
+  width: 200px;
+  border: solid 1px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link{
+  color: #8f8d8d;
+  font-size: 20px;
+}
+.active-link{
+  border: 2px solid var(--ftcolor);
+  font-weight: bold;
 }
