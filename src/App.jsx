@@ -29,6 +29,7 @@ import ParamComp from "./components/Router/ParamComp";
 import Courses from "./components/Router/NestedRouting/Courses";
 import Mock from "./components/Router/NestedRouting/Mock";
 import Reports from "./components/Router/NestedRouting/Reports";
+import NotFound from "./components/Router/NotFound";
 
 
   ////////////////////Routing in react STart
@@ -81,6 +82,12 @@ const router = createBrowserRouter(
       <div className="text-center">
         <Navbar></Navbar>
         <ParamComp></ParamComp>
+      </div>
+    },
+    {
+      path:"*",
+      element: <div className="">
+        <NotFound></NotFound>
       </div>
     }
   ]
