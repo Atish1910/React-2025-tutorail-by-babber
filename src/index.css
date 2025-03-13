@@ -130,3 +130,9 @@ h4, h5, h6{
   border: 2px solid var(--ftcolor);
   font-weight: bold;
 }
+.input-errors:focus{
+  box-shadow: unset !important;
+}
+.input-errors{
+  border: solid 1px red !important;
+}

@@ -30,6 +30,7 @@ import Courses from "./components/Router/NestedRouting/Courses";
 import Mock from "./components/Router/NestedRouting/Mock";
 import Reports from "./components/Router/NestedRouting/Reports";
 import NotFound from "./components/Router/NotFound";
+import Form from "./components/Form/Form";
 
 
   ////////////////////Routing in react STart
@@ -185,6 +186,7 @@ function App(){
           <RouterProvider router={router}></RouterProvider>
         </div>
       </div>
+      <Form></Form>
     </>
   )
 }
