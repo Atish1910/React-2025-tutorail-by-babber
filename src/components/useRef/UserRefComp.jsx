@@ -11,11 +11,13 @@ function UseRefComp(){
   function handleClick(){
     
     //this is normal value 
+    console.log("value of val is :" , val);
     val = val + 1;
     console.log("value of val is :" , val);
     
     // this is useref value
-    valTwo.current = valTwo.current + 1;
+    // valTwo.current = valTwo.current + 1;
+    valTwo.current = valTwo.current +1;
     console.log("value of valTwo is :" , valTwo.current);
     
     setCount(Count +1);
