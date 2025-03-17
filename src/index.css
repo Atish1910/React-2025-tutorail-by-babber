@@ -136,3 +136,6 @@ h4, h5, h6{
 .input-errors{
   border: solid 1px red !important;
 }
+h1{
+  text-align: center;
+}
