@@ -1,0 +1,4 @@
+Redux Command
+https://redux-toolkit.js.org/tutorials/quick-start
+-> npm install @reduxjs/toolkit\
+=> npm install react-redux

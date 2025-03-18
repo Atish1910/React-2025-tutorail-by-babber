@@ -31,6 +31,7 @@ import Mock from "./components/Router/NestedRouting/Mock";
 import Reports from "./components/Router/NestedRouting/Reports";
 import NotFound from "./components/Router/NotFound";
 import Form from "./components/Form/Form";
+import ReduxComp from "./components/ReduxToolkit/ReduxComp";
 
 
   ////////////////////Routing in react STart
@@ -187,6 +188,7 @@ function App(){
         </div>
       </div>
       <Form></Form>
+      <ReduxComp></ReduxComp>
     </>
   )
 }

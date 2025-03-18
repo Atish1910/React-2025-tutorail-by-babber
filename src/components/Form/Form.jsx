@@ -7,10 +7,13 @@ function Form(){
       register,
       handleSubmit,
       watch,
-      formState: {errors},
+      formState: {errors, isSubmitting},
   } = useForm();
 
-  function onSubmit(data){
+  async function onSubmit(data){
+    // API Call;
+    await new Promise((res) => setTimeout(res, 5000));
+
     console.log("You just submitted form", data);
   }
 
@@ -40,8 +43,10 @@ function Form(){
             <input type="text"  className={errors.middleName ? "input-errors form-control my-3" : " form-control my-3"} placeholder="Middle Name"  {...register("middleName", 
               {
                 required: true,
-                minLength:{value:3, message: "min lenght should be at least 3 char"},
-                maxLength:{value:10, message: "Max Lenght is 10char only"}
+                pattern : {
+                  value: /^[A-Za-z]+$/i,
+                  message: "Last Name is Not As Per Rule"
+                }
                 })} />
                 {
                   errors.middleName && <p className="text-danger">{errors.middleName.message}</p>
@@ -57,7 +62,7 @@ function Form(){
               errors.phone && <p className="text-danger">{errors.phone.message}</p>
             }
             <input type="text"  className={errors.lastName ? "input-errors form-control my-3" : " form-control my-3"} placeholder="Last Name"  {...register("lastName", {required: true})} />
-            <button className="btn btn-success mt-4" type="submit">Submit</button>
+            <button className="btn btn-success mt-4" type="submit" disabled={isSubmitting}>{isSubmitting ? "please wait" : "submit"}</button>
           </form>
         </div>
       </div>
