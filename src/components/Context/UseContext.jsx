@@ -17,8 +17,8 @@ function UseContext(){
   
   <>
       <div className="container">
+          
         <div className="row text-center">
-          <h1>Learn useContext Hook in Depth</h1>
           <UserContext.Provider value={user }>
             <ChildC></ChildC>
           </UserContext.Provider>

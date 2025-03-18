@@ -31,7 +31,6 @@ import Mock from "./components/Router/NestedRouting/Mock";
 import Reports from "./components/Router/NestedRouting/Reports";
 import NotFound from "./components/Router/NotFound";
 import Form from "./components/Form/Form";
-import ReduxComp from "./components/ReduxToolkit/ReduxComp";
 
 
   ////////////////////Routing in react STart
@@ -169,6 +168,7 @@ function App(){
         </div>
       </div>
       <div className="container">
+      <h1>Learn useContext Hook in Depth</h1>
         <div className="row">
           <div className="col-lg-4 border py-5">
               <UseContext></UseContext>
@@ -188,7 +188,6 @@ function App(){
         </div>
       </div>
       <Form></Form>
-      <ReduxComp></ReduxComp>
     </>
   )
 }
