@@ -5,9 +5,9 @@ const MapOperator = () => {
     return (
         <section>
             <div class="container py-5 my-3 border text-center">
-                <div class="row">
-                    <h4>Map Operator</h4>
-                    <div class="col-lg-3">
+                <div class="row justify-content-center">
+                    <h1>Map Operator</h1>
+                    <div class="col-lg-3 border py-5">
                         <ul>
                             {
                                 cityArray.map((city) =>{

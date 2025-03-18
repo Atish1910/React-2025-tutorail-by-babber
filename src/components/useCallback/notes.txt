@@ -1,0 +1,3 @@
+there are 2 components parent and child
+when we do any oprn or any activity in parent component, child component gfet re render every time
+to minim ize this problem we use useCallback Hooks

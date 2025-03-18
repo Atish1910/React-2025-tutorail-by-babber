@@ -52,13 +52,13 @@ const GetPostApi = () =>{
     return(
         
     <section>
-    <div className="container-fluid border mt-5">
+    <div className="container border mt-5">
         <div className="row p-5">
-            <h4>GetPostApi : API Call GET & Post</h4>
-            <div className="col-lg-8">
-                <div className="row bg-success py-3 mb-2">
+            <h1 className="mb-4">GetPostApi : API Call GET & Post</h1>
+            <div className="col-lg-8 border pe-5">
+                <div className="row border py-3 mb-4">
                     <div className="col-lg-6 text-start">
-                        <h5 className="text-white">Get Users</h5>
+                        <h5 className="text-dark">Get Users</h5>
                         
                     </div>
                     <div className="col-lg-6 text-end">
@@ -94,33 +94,32 @@ const GetPostApi = () =>{
                     </table>
                 </div>
             </div>
-            <div class="col-lg-4 border ps-4">
-            <div className="row bg-warning">
-                    <div className="col-lg-6">
+            <div class="col-lg-4 border">
+            <div className="row text-center py-3">
                         <h5 className="text-white">Create Users</h5>
-                        
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row py-4">
+                    <div class="col-lg-6 mb-3">
                         <input type="text" className="form-control"  onChange={(event) => updateFormValue(event, "username")} placeholder="User Name"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <input type="email" className="form-control"  onChange={(event) => updateFormValue(event, "emailId")} placeholder="Email"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <input type="text" className="form-control"  onChange={(event) => updateFormValue(event, "fullName")} placeholder="Full Name"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <input type="text" className="form-control"  onChange={(event) => updateFormValue(event, "role")} placeholder="Roll"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <input type="password" className="form-control"  onChange={(event) => updateFormValue(event, "password")} placeholder="Password"/>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <input type="text" className="form-control"  onChange={(event) => updateFormValue(event, "projectName")} placeholder="Project Name"/>
                     </div>
+                    <div className="text-center">
                     <button class="btn btn-warning" onClick={saveNewUser}>Submit</button>
+                    </div>
                 </div>
             </div>
         </div>

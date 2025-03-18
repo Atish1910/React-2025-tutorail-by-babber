@@ -33,10 +33,10 @@ import NotFound from "./components/Router/NotFound";
 import Form from "./components/Form/Form";
 import UseRefComp from "./components/useRef/UserRefComp";
 import UseMemoComp from "./components/useMemo/useMemoComp";
-import Teachers from './learingPaertners/Teacher';
-import Employee from './learingPaertners/employee';
+import Teachers from './learingPaertners/combine/Teacher';
+import Employee from './learingPaertners/combine/employee';
 import DataBinding from './learingPaertners/DataBinding';
-import EventBinding from './learingPaertners/EventBinding';
+import EventBinding from './learingPaertners/combine/EventBinding';
 // import UseState from './learingPaertners/UseState';
 import UseStateObject from './learingPaertners/UseStateObject';
 import UseStateArray from './learingPaertners/UseStateArray';
@@ -45,6 +45,7 @@ import DynamicStyleClass from './learingPaertners/DynamicStyleClass';
 import MapOperator from './learingPaertners/MapOperator';
 import GetPostApi from './learingPaertners/GetPostApi';
 import Practice from './learingPaertners/Practice';
+import UseCallbackComp from "./components/useCallback/UseCallbackComp";
 
 
   ////////////////////Routing in react STart
@@ -148,6 +149,12 @@ function App(){
         </div>
       </div>
       <UseState></UseState>
+      <DataBinding></DataBinding>
+      
+      <ConditionalRendeing></ConditionalRendeing>
+      <DynamicStyleClass></DynamicStyleClass>
+      <MapOperator></MapOperator>
+
       <Card name="Atish Kamble...">
         <h6>Best Web Developer</h6>
         <span>Want to become Content Creator</span>
@@ -204,18 +211,14 @@ function App(){
       <Form></Form>
       <UseRefComp></UseRefComp>
       <UseMemoComp></UseMemoComp>
-
-      <div className="container">
-      <Teachers></Teachers>
-      <Employee></Employee>
-      <DataBinding></DataBinding>
-      <EventBinding></EventBinding>
       {/* <UseState></UseState> */}
       <UseStateObject></UseStateObject>
       <UseStateArray></UseStateArray>
-      <ConditionalRendeing></ConditionalRendeing>
-      <DynamicStyleClass></DynamicStyleClass>
-      <MapOperator></MapOperator>
+      <UseCallbackComp></UseCallbackComp>
+      <div className="container">
+      <Teachers></Teachers>
+      <Employee></Employee>
+      <EventBinding></EventBinding>
       <GetPostApi></GetPostApi>
       <Practice></Practice>
       </div>

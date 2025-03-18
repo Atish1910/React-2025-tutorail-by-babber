@@ -81,30 +81,27 @@ const Practice = () => {
 
     return (
         <section>
-    <div className="container-fluid border mt-5">
+    <div className="container border mt-5">
         <div className="row p-5">
-            <h4>Practice :  Call GET & Post</h4>
+            <h1 className='mb-4'>Practice :  Call GET & Post</h1>
             <div class="col-lg-4 border ps-4">
-                <div className="row bg-warning">
-                        <div className="col-lg-6">
-                            <h5 className="text-white">Create Users</h5>
-                            
-                        </div>
+                <div className="row text-center py-4">
+                            <h5 className="">Create Users</h5>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row text-center">
+                        <div class="col-lg-6 mb-3 ">
                             <input type="text" value={userObj.userName}  className="form-control" onChange={(event) => updateFormValue(event, "userName")} placeholder="User Name"/>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-3 ">
                             <input type="email" value={userObj.emailId} onChange={(event) => updateFormValue(event, "emailId")}  className="form-control" placeholder="Email"/>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-3 ">
                             <input type="text" value={userObj.fullName} onChange={(event) => updateFormValue(event, "fullName")}  className="form-control" placeholder="Full Name"/>
                         </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3 ">
                         <input type="password"  value={userObj.password} onChange={(event) => updateFormValue(event, "password")}  className="form-control" placeholder="Password"/>
                     </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-3 ">
                             <input type="text" value={userObj.role} onChange={(event) => updateFormValue(event, "role")}  className="form-control" placeholder="Roll"/>
                         </div>
                         {
@@ -116,10 +113,10 @@ const Practice = () => {
                         
                     </div>
                 </div>
-            <div className="col-lg-8">
-                <div className="row bg-success py-3 mb-2">
+            <div className="col-lg-8 ps-5">
+                <div className="row py-3 mb-2  border border-dark">
                     <div className="col-lg-6 text-start">
-                        <h5 className="text-white">Get Users</h5>
+                        <h5 className="">Get Users</h5>
                         
                     </div>
                     <div className="col-lg-6 text-end">

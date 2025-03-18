@@ -5,7 +5,7 @@ function Card(props){
   return(
     <>
     <div className="container">
-      <div className="row">
+      <div className="row text-center">
         <h1>03 : Props </h1>
         <small>how to pass data from app.jsx to current component parent to child</small>
         <small>besically we can perform event handelling & nestted data fetcing from app.jsx to child.jsx</small>

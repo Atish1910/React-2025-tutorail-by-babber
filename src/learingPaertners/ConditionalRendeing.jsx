@@ -45,11 +45,11 @@ const ConditionalRendeing = () => {
 
     return (
         <div>
-            <section>
-            <div className="container">
-                <h5> 06: Conditional Rendering</h5>
-                <div className="row py-5 border">
-                    <div className="col-md-3 mb-4">
+            <section className='container '>
+            <div className="row">
+                <h1> 06: Conditional Rendering</h1>
+                <div className="row py-5 border justify-content-center align-items-streched">
+                    <div className="col-md-3 py-5 border border-dark mb-4">
                         <div className="">
                         {
                             isDiv1Visible && <div className="border bg-danger py-4 mb-4" >Div1</div>
@@ -59,7 +59,7 @@ const ConditionalRendeing = () => {
                             <button className="btn btn-danger" onClick={showDiv1}>Show</button>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 py-5 border border-dark">
                         <div className="">
                         {
                             isDiv2Visible && <div className="border py-4 bg-success">Div2</div>
@@ -67,7 +67,7 @@ const ConditionalRendeing = () => {
                             <button className="btn btn-success" onClick={showHideDiv2}>Toggle</button>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 py-5 border border-dark">
                             -{input1} - {input2}
                             {
                                 input1 == input2 &&  <div className="border bg-secondary py-4">Div3</div>
@@ -78,7 +78,7 @@ const ConditionalRendeing = () => {
                         <input type="text" className="form-control"  onChange={(e) =>changeInput2(e)} placeholder=''/>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 py-5 border border-dark">
                         {
                             option == "USA" && <div className="border bg-secondary py-4">Div3</div>
                         }
@@ -90,7 +90,7 @@ const ConditionalRendeing = () => {
                             </select>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 py-5 border border-dark mt-5">
                             {
                                 isActive && <div className="border bg-secondary py-4">Div4</div>
                             }

@@ -17,11 +17,12 @@ const DataBinding = () =>{
 
     
     return (
-        <div className="text-center">
-            <h4>Data Binding</h4>
+        <div className="container text-center py-5">
+            <div className="row">
+            <h1>Data Binding</h1>
             <input type="text" value={tutorialsName} />
 
-            <table>
+            <table className="table table-bordered border-dark">
                 <tr>
                     <td>Tutorial Name- {tutorialsName}</td>
                     <td>roll Number - {rollNumber}</td>
@@ -37,6 +38,7 @@ const DataBinding = () =>{
                     <td>{cityList.toString() }</td>
                 </tr>
             </table>
+        </div>
         </div>
     );
 };

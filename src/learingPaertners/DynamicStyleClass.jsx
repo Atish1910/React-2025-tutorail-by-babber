@@ -41,9 +41,9 @@ const DynamicStyleClass = () => {
         <div>
             <div className="container border my-3 py-5">
                 <div className="row ">
-                    <h4>08: Add Dynamic Class & Style</h4>
+                    <h1>08: Add Dynamic Class & Style</h1>
 
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 ">
                     <div className="py-3 mb-4 border" style={{'background-color': colorRed}}>Div1</div>
                         <button className="btn btn-danger" onClick={() => addColorDiv1("red")}>Add Red</button>
                         <button className="btn btn-primary" onClick={() => addColorDiv1("blue")}>Add Blue</button>
