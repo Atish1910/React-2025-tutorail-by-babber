@@ -31,6 +31,20 @@ import Mock from "./components/Router/NestedRouting/Mock";
 import Reports from "./components/Router/NestedRouting/Reports";
 import NotFound from "./components/Router/NotFound";
 import Form from "./components/Form/Form";
+import UseRefComp from "./components/useRef/UserRefComp";
+import UseMemoComp from "./components/useMemo/useMemoComp";
+import Teachers from './learingPaertners/Teacher';
+import Employee from './learingPaertners/employee';
+import DataBinding from './learingPaertners/DataBinding';
+import EventBinding from './learingPaertners/EventBinding';
+// import UseState from './learingPaertners/UseState';
+import UseStateObject from './learingPaertners/UseStateObject';
+import UseStateArray from './learingPaertners/UseStateArray';
+import ConditionalRendeing from './learingPaertners/ConditionalRendeing';
+import DynamicStyleClass from './learingPaertners/DynamicStyleClass';
+import MapOperator from './learingPaertners/MapOperator';
+import GetPostApi from './learingPaertners/GetPostApi';
+import Practice from './learingPaertners/Practice';
 
 
   ////////////////////Routing in react STart
@@ -188,6 +202,24 @@ function App(){
         </div>
       </div>
       <Form></Form>
+      <UseRefComp></UseRefComp>
+      <UseMemoComp></UseMemoComp>
+
+      <div className="container">
+      <Teachers></Teachers>
+      <Employee></Employee>
+      <DataBinding></DataBinding>
+      <EventBinding></EventBinding>
+      {/* <UseState></UseState> */}
+      <UseStateObject></UseStateObject>
+      <UseStateArray></UseStateArray>
+      <ConditionalRendeing></ConditionalRendeing>
+      <DynamicStyleClass></DynamicStyleClass>
+      <MapOperator></MapOperator>
+      <GetPostApi></GetPostApi>
+      <Practice></Practice>
+      </div>
+      
     </>
   )
 }
