@@ -37,7 +37,6 @@ import Teachers from './learingPaertners/combine/Teacher';
 import Employee from './learingPaertners/combine/employee';
 import DataBinding from './learingPaertners/DataBinding';
 import EventBinding from './learingPaertners/combine/EventBinding';
-// import UseState from './learingPaertners/UseState';
 import UseStateObject from './learingPaertners/UseStateObject';
 import UseStateArray from './learingPaertners/UseStateArray';
 import ConditionalRendeing from './learingPaertners/ConditionalRendeing';
@@ -46,6 +45,8 @@ import MapOperator from './learingPaertners/MapOperator';
 import GetPostApi from './learingPaertners/GetPostApi';
 import Practice from './learingPaertners/Practice';
 import UseCallbackComp from "./components/useCallback/UseCallbackComp";
+import FormApi from "./components/Form/FormApi";
+import ExpensiveComp from "./components/useCallback/ExpensiveComp";
 
 
   ////////////////////Routing in react STart
@@ -207,14 +208,16 @@ function App(){
           <h1>React Routing</h1>
           <RouterProvider router={router}></RouterProvider>
         </div>
-      </div>
+      </div> 
       <Form></Form>
+      <FormApi></FormApi>
       <UseRefComp></UseRefComp>
       <UseMemoComp></UseMemoComp>
-      {/* <UseState></UseState> */}
       <UseStateObject></UseStateObject>
       <UseStateArray></UseStateArray>
-      <UseCallbackComp></UseCallbackComp>
+      <div className="container py-5">
+        <UseCallbackComp></UseCallbackComp>
+      </div>
       <div className="container">
       <Teachers></Teachers>
       <Employee></Employee>
