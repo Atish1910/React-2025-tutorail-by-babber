@@ -13,8 +13,8 @@ function Form(){
   async function onSubmit(data){
     // API Call;
     await new Promise((res) => setTimeout(res, 5000));
-
     console.log("You just submitted form", data);
+    
   }
 
   return(
@@ -61,7 +61,11 @@ function Form(){
             {
               errors.phone && <p className="text-danger">{errors.phone.message}</p>
             }
-            <input type="text"  className={errors.lastName ? "input-errors form-control my-3" : " form-control my-3"} placeholder="Last Name"  {...register("lastName", {required: true})} />
+            <input type="text"  
+              className={errors.lastName ? "input-errors form-control my-3" : " form-control my-3"} placeholder="Last Name"  
+              {...register("lastName", {required: true})} 
+              />
+
             <button className="btn btn-success mt-4" type="submit" disabled={isSubmitting}>{isSubmitting ? "please wait" : "submit"}</button>
           </form>
         </div>
