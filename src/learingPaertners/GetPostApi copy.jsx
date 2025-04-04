@@ -19,12 +19,16 @@ const GetPostApi = () =>{
     // Post API Call Start
     const [userObj, setUserObj] = useState(
         {
-            "name":"",
-            "email":"",
-            "password":"",
-            "accountType":"",
-            "contactNumber": 0,
-            "otp":""
+            "userId": 0,
+            "userName": "",
+            "emailId": "",
+            "fullName": "",
+            "role": "",
+            "createdDate": new Date(),
+            "password": "",
+            "projectName": "",
+            "refreshToken": "",
+            "refreshTokenExpiryTime": new Date()
         }
     );
     const updateFormValue = (event, key) =>{
@@ -32,7 +36,7 @@ const GetPostApi = () =>{
     }
     const saveNewUser = async  () =>{
         
-        const createUserApiCall = await axios.post("https://ballr-wpc0.onrender.com/api/v1/sendotp", userObj);
+        const createUserApiCall = await axios.post("https://projectapi.gerasim.in/api/BudgetPlanner/AddNewUser", userObj);
         setUserObj(createUserApiCall.data.data);
 
         if(createUserApiCall.data.result){
